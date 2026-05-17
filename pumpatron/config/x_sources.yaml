@@ -1,0 +1,125 @@
+sources:
+  - handle: CoinDesk
+    url: https://x.com/CoinDesk
+    category: market_news
+    priority: high
+
+  - handle: zerohedge
+    url: https://x.com/zerohedge
+    category: market_news
+    priority: high
+
+  - handle: Benzinga
+    url: https://x.com/Benzinga
+    category: market_news
+    priority: medium
+
+  - handle: StockMKTNewz
+    url: https://x.com/StockMKTNewz
+    category: market_news
+    priority: medium
+
+  - handle: unusual_whales
+    url: https://x.com/unusual_whales
+    category: market_news
+    priority: medium
+
+  - handle: CoinMarketCap
+    url: https://x.com/CoinMarketCap
+    category: crypto_alpha
+    priority: high
+
+  - handle: WatcherGuru
+    url: https://x.com/WatcherGuru
+    category: crypto_alpha
+    priority: high
+
+  - handle: WhaleAlert
+    url: https://x.com/whale_alert
+    category: crypto_alpha
+    priority: high
+
+  - handle: CryptoSlate
+    url: https://x.com/CryptoSlate
+    category: crypto_alpha
+    priority: high
+
+  - handle: Cointelegraph
+    url: https://x.com/Cointelegraph
+    category: crypto_alpha
+    priority: high
+
+  - handle: DecryptMedia
+    url: https://x.com/DecryptMedia
+    category: crypto_alpha
+    priority: high
+
+  - handle: VitalikButerin
+    url: https://x.com/VitalikButerin
+    category: crypto_alpha
+    priority: high
+
+  - handle: aantonop
+    url: https://x.com/aantonop
+    category: crypto_alpha
+    priority: medium
+
+  - handle: cnnbrk
+    url: https://x.com/cnnbrk
+    category: news_breaking
+    priority: high
+
+  - handle: CNN
+    url: https://x.com/CNN
+    category: news_breaking
+    priority: high
+
+  - handle: Reuters
+    url: https://x.com/Reuters
+    category: news_breaking
+    priority: high
+
+  - handle: AP
+    url: https://x.com/AP
+    category: news_breaking
+    priority: high
+
+  - handle: FoxNews
+    url: https://x.com/FoxNews
+    category: news_breaking
+    priority: high
+
+  - handle: SkyNews
+    url: https://x.com/SkyNews
+    category: news_breaking
+    priority: high
+
+  - handle: Dexerto
+    url: https://x.com/Dexerto
+    category: internet_culture
+    priority: high
+
+  - handle: DramaAlert
+    url: https://x.com/DramaAlert
+    category: internet_culture
+    priority: high
+
+  - handle: PopCrave
+    url: https://x.com/PopCrave
+    category: internet_culture
+    priority: high
+
+  - handle: TheShadeRoom
+    url: https://x.com/TheShadeRoom
+    category: internet_culture
+    priority: high
+
+  - handle: Complex
+    url: https://x.com/Complex
+    category: internet_culture
+    priority: high
+
+  - handle: DailyLoud
+    url: https://x.com/DailyLoud
+    category: internet_culture
+    priority: high

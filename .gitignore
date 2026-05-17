@@ -1,0 +1,17 @@
+.env
+*.env
+**/.env
+**/sessions/**
+**/logs/**
+**/cron/**
+**/memories/**
+**/cache/**
+**/state.db
+**/*.db
+**/*.sqlite
+**/storage-state.json
+**/cookies.json
+**/auth.json
+pumpatron/data/**
+pumpatron/evidence/**
+*.log
