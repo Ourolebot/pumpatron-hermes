@@ -97,7 +97,9 @@ PY
   PACKET_TMP="$PACKETS/$SAFE_ID.tmp.md"
   PACKET="$PACKETS/$SAFE_ID.md"
 
-  if pumpatron-hotdesk chat -q "Use pumpatron-hotdesk. Read $CURRENT and return a verdict packet for that single signal only. Do not browse. Do not delegate. Return the packet only." > "$PACKET_TMP"; then
+  HOTDESK="${PUMPATRON_HOTDESK:-/home/hermes/.local/bin/pumpatron-hotdesk}"
+
+  if "$HOTDESK" chat -q "Use pumpatron-hotdesk. Read $CURRENT and return a verdict packet for that single signal only. Do not browse. Do not delegate. Return the packet only." > "$PACKET_TMP"; then
     if [ ! -s "$PACKET_TMP" ]; then
       echo "hotdesk produced empty packet; signal not marked processed"
       rm -f "$PACKET_TMP"

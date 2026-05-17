@@ -1,0 +1,14 @@
+[Unit]
+Description=Pumpatron X List poller
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=hermes
+WorkingDirectory=/home/hermes/pumpatron
+Environment=PUMPATRON_BASE=/home/hermes/pumpatron
+Environment=PUMPATRON_VENV=/home/hermes/.local/share/pumpatron/venv
+Environment=PUMPATRON_X_LIST_URL=https://x.com/i/lists/2055661004780888443
+Environment=PUMPATRON_X_STORAGE_STATE=/home/hermes/.local/share/pumpatron/x-storage-state.json
+ExecStart=/home/hermes/pumpatron/scripts/run_x_list_poll.sh

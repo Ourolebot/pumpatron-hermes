@@ -29,7 +29,7 @@ BLOCK_PATTERNS = [
     ("arrest", r"\b(arrest|arrested|jail|prison|custody)\b"),
     ("weapon", r"\b(gun|weapon|knife|shooting|stabbed|armed)\b"),
     ("violence", r"\b(violence|fight|physical altercation|assault|attack|threat|terrorism|war casualty)\b"),
-    ("death_tragedy", r"\b(death|dead|died|killed|murder|suicide|self-harm|tragedy|disaster)\b"),
+    ("death_tragedy", r"\b(death|dead|died|killed|murder|suicide|self-harm|tragedy|disaster|body|bodies|casualties|fatalities)\b"),
     ("minor", r"\b(minor|child|children|underage|teen|teens|school violence|school shooting)\b"),
     ("harassment", r"\b(doxx|doxxing|harass|harassment|bully|bullying)\b"),
     ("market_manipulation", r"\b(wash trading|fake volume|raid|raids|pump and dump|fake engagement)\b"),
