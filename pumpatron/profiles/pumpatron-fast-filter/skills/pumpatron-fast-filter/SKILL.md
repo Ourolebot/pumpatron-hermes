@@ -1,6 +1,6 @@
 ---
 name: pumpatron-fast-filter
-description: Use when mechanically ranking collected social records by freshness, engagement velocity, source priority, and early block flags before sending hot signals to News Scout.
+description: Use when mechanically ranking collected social and notification records by freshness, engagement velocity, source priority, and early block flags before sending hot signals to Hotdesk.
 ---
 
 # Pumpatron Fast Filter
@@ -12,6 +12,7 @@ Rank collected social records quickly. Do not browse, interpret deeply, create a
 ## Inputs
 
 Default input:
+- /home/hermes/pumpatron/data/notification_events.jsonl
 - /home/hermes/pumpatron/data/social_events.jsonl
 
 Default output:
@@ -67,6 +68,6 @@ For each hot signal:
 
 ## Handoff
 
-- hot -> pumpatron-news-scout
-- watch -> pumpatron-news-scout only if capacity allows
-- blocked -> pumpatron-archivist
+- hot -> pumpatron-hotdesk
+- watch -> pumpatron-hotdesk only when PUMPATRON_ALLOW_WATCH=1 or the human explicitly asks
+- blocked -> pumpatron-archivist asynchronously

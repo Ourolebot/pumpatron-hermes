@@ -69,6 +69,8 @@ For each selected signal:
 
 - Verdict:
 - Signal ID:
+- Filter status:
+- Hot score:
 - Source handle:
 - Source link:
 - Timestamp:
@@ -89,6 +91,7 @@ For each selected signal:
 ## Manual Checklist Rules
 
 The checklist may prepare the human operator.
+It must be limited to readiness checks, review gates, and missing items.
 
 It must never:
 - execute a launch
@@ -101,3 +104,4 @@ It must never:
 ## Style
 
 Be fast, compact, and decisive.
+For watch or reject verdicts, output only evidence, risk flags, reason, and next review action.

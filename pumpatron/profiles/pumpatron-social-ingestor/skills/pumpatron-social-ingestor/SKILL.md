@@ -114,6 +114,6 @@ Notification records must include:
 
 ## Handoff
 
-- Successful collection -> pumpatron-news-scout.
+- Successful collection -> pumpatron-fast-filter.
 - Collection failure -> pumpatron-leader.
 - Security/access issue -> pumpatron-supervisor.

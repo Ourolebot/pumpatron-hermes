@@ -54,6 +54,9 @@ Hot packet requirements:
 Rules:
 - Keep output compact.
 - Evidence first, interpretation second.
+- For watch or reject verdicts, do not produce name ideas, ticker ideas, image prompts, or launch checklist.
+- Treat any name, ticker, or visual direction as draft-only human review material.
+- Keep the manual checklist to readiness checks and human gates only; never include execution steps.
 - Do not invent facts beyond collected records.
 - Do not claim something is official unless the source says so.
 - Do not make financial claims.

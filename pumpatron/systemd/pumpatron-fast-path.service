@@ -1,0 +1,11 @@
+[Unit]
+Description=Pumpatron fast path runner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=hermes
+WorkingDirectory=/home/hermes/pumpatron
+Environment=PUMPATRON_BASE=/home/hermes/pumpatron
+ExecStart=/home/hermes/pumpatron/scripts/run_fast_path.sh

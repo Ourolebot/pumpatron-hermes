@@ -14,6 +14,8 @@ Do not perform worker tasks. Do not scout narratives, create memes, generate ass
 ## Team
 
 - pumpatron-leader: decomposes goals and assigns work.
+- pumpatron-fast-filter: deterministic local scoring for collected records.
+- pumpatron-hotdesk: realtime fast-path triage and packet generation.
 - pumpatron-news-scout: finds sourced narratives.
 - pumpatron-meme-analyst: scores meme potential.
 - pumpatron-asset-maker: drafts assets only after compliance pass.

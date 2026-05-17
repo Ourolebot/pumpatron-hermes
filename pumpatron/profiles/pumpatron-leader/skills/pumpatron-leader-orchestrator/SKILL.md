@@ -10,11 +10,13 @@ description: Use when coordinating Pumpatron workers, decomposing requests into 
 Act as the team leader. Do not perform worker tasks directly.
 
 Your job is to decompose, assign, collect, validate, and summarize.
+You are for async review, fallback, and audit workflows. The realtime fast path is `social/notification events -> fast-filter -> hotdesk`.
 
 ## Routing Table
 
 - Meme Analyst must produce the full scoring schema defined by pumpatron-meme-analyst. Leader must not replace scoring with a vague recommendation.
 - Need fresh social data from X/source list: assign pumpatron-social-ingestor before pumpatron-news-scout.
+- Need immediate realtime packet from already collected events: use pumpatron-hotdesk after pumpatron-fast-filter.
 - Need fresh narratives, links, timestamps: assign pumpatron-news-scout.
 - Need meme potential, audience, virality score: assign pumpatron-meme-analyst.
 - Need risk review, veto, safety score: assign pumpatron-compliance-guard.
@@ -24,7 +26,7 @@ Your job is to decompose, assign, collect, validate, and summarize.
 - Need records: assign pumpatron-archivist.
 - Need governance decision or conflict resolution: escalate to pumpatron-supervisor.
 
-## Required Handoff Order
+## Async Handoff Order
 
 For every candidate:
 
